@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A personal Pallete: Colors and Objects</title>
-<style>
- body{font family: Arial, sans-serif;
-      margin: 40px auto;max-width: 650px;line-height: 1.6;font-size: 18px;color: #333;padding: 0;
-}
- .container {
-  width: 80%;
-  margin: auto;
-  padding: 20px;
- }
- .color-section {
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-.color-swatches {
- display: flex;
- gap: 20px;
-}
-.color-swatches div {
- flex: 1;
- height: 150px;
- border-radius: 8px;
-}
-.object-gallery {
- margin-top: 20px;
-}
- .object-gallery img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
- }
- h2 {
-  margin-top: 0;
-}
-</style>
-    <h1>Welcome to My Personal Palette</h1>
-    <p>This is a test page to ensure everything is working correctly.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Objects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .color-section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .color-swatches {
+            display: flex;
+            gap: 20px;
+        }
+        .color-swatches div {
+            flex: 1;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .object-gallery {
+            margin-top: 20px;
+        }
+        .object-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Favorite Colors and the Objects I See Them In</h1>
+        </header>
+
+        <section class="color-section" style="background-color: #2206c4;">
+            <h2>Color #2206c4</h2>
+            <div class="color-swatches">
+                <div style="background-color: #2206c4;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object1.jpg" alt="Object 1">
+                <img src="path/to/your-object2.jpg" alt="Object 2">
+            </div>
+        </section>
+
+        <section class="color-section" style="background-color: #7d0f00;">
+            <h2>Color #7d0f00</h2>
+            <div class="color-swatches">
+                <div style="background-color: #7d0f00;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object3.jpg" alt="Object 3">
+                <img src="path/to/your-object4.jpg" alt="Object 4">
+            </div>
+        </section>
+
+        <!-- Repeat similar sections for other colors -->
+        <!-- Add more sections for colors #004f3f, #42004f, and #61012e -->
+
+    </div>
+</body>
 </html>
