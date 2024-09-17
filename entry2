@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3: Entry 2</title>
+    
+    <!-- Import Playfair Display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply Playfair Display font */
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 900; /* Bold weight for header */
+        }
+
+        section h2 {
+            font-weight: 700; /* Semi-bold for section titles */
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 400; /* Normal weight for footer */
+        }
+
+        a {
+            text-decoration: none;
+            color: #2206c4; /* Style for link */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with a title -->
+    <header>
+        <h1>Week 3: Entry 2</h1>
+    </header>
+
+    <!-- Image Section -->
+    <section>
+        <h2>Browns & Blues</h2>
+        <img src="https://drive.google.com/uc?export=view&id=1TiDok-yM1NPBr3X17eeSGnXUEAfq4ZmV" alt="Photo from Google Drive">
+    </section>
+
+    <!-- Back to homepage link -->
+    <footer>
+        <p><a href="https://mukhs106.github.io/c1i/">Back to home page</a></p>
+    </footer>
+
+</body>
+</html>
