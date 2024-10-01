@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Objects</title>
+    <style>
+        body {
+<!-- font-family: Arial, sans-serif; -->
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .color-section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .color-swatches {
+            display: flex;
+            gap: 20px;
+        }
+        .color-swatches div {
+            flex: 1;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .object-gallery {
+            margin-top: 20px;
+        }
+        .object-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <header>
+            <h1>Personal Pallete: Objects & colors</h1>
+            <h2>Core 1: Interaction</h2>
+            <p>By Suhani Mukherjee</p>
+        </header>
+
+        <!-- Section for Color #2206c4 -->
+        <section class="color-section" style="background-color: #2206c4;">
+            <h2>Color #2206c4</h2>
+            <div class="color-swatches">
+                <div style="background-color: #2206c4;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object1.jpg" alt="Object 1">
+                <img src="path/to/your-object2.jpg" alt="Object 2">
+            </div>
+        </section>
+
+        <!-- Section for Color #7d0f00 -->
+        <section class="color-section" style="background-color: #7d0f00;">
+            <h2>Color #7d0f00</h2>
+            <div class="color-swatches">
+                <div style="background-color: #7d0f00;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object3.jpg" alt="Object 3">
+                <img src="path/to/your-object4.jpg" alt="Object 4">
+            </div>
+        </section>
+
+        <!-- Section for Color #004f3f -->
+        <section class="color-section" style="background-color: #004f3f;">
+            <h2>Color #004f3f</h2>
+            <div class="color-swatches">
+                <div style="background-color: #004f3f;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object5.jpg" alt="Object 5">
+                <img src="path/to/your-object6.jpg" alt="Object 6">
+            </div>
+        </section>
+
+        <!-- Section for Color #42004f -->
+        <section class="color-section" style="background-color: #42004f;">
+            <h2>Color #42004f</h2>
+            <div class="color-swatches">
+                <div style="background-color: #42004f;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object7.jpg" alt="Object 7">
+                <img src="path/to/your-object8.jpg" alt="Object 8">
+            </div>
+        </section>
+
+        <!-- Section for Color #61012e -->
+        <section class="color-section" style="background-color: #61012e;">
+            <h2>Color #61012e</h2>
+            <div class="color-swatches">
+                <div style="background-color: #61012e;"></div>
+            </div>
+            <div class="object-gallery">
+                <h3>Objects in This Color</h3>
+                <img src="path/to/your-object9.jpg" alt="Object 9">
+                <img src="path/to/your-object10.jpg" alt="Object 10">
+            </div>
+        </section>
+</body>
+</html>
