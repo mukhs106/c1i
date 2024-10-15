@@ -3,51 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Favorite Colors Around Me</title>
     <style>
-        /* Header styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
         header {
-            width: 1512px;
-            height: 100px;
-            flex-shrink: 0;
-            background: #001EB6;
+            background-color: #2206c4; /* Blue color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .color-box {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
             display: flex;
             align-items: center;
-            padding-left: 20px; /* Adds padding to the left side */
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px #000;
         }
 
-        /* Container for the icon and text */
-        .header-content {
-            display: flex;
-            align-items: center;
-            width: 375px;
-            height: 68px;
+        .box1 {
+            background-color: #7d0f00; /* Deep red */
         }
 
-        /* Icon styling */
-        .header-content img {
-            width: 40px; /* Adjust the size of the icon as needed */
-            height: 40px;
-            margin-right: 10px; /* Space between the icon and the text */
+        .box2 {
+            background-color: #004f3f; /* Dark green */
         }
 
-        /* Text styling with increased font size */
-        .header-content span {
-            color: #FFF;
-            font-family: "Just Me Again Down Here", sans-serif;
-            font-size: 60px; /* Increased font size */
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+        .box3 {
+            background-color: #42004f; /* Dark purple */
+        }
+
+        .box4 {
+            background-color: #61012e; /* Deep burgundy */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2206c4;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header section with navigation -->
     <header>
-        <div class="header-content">
-            <img src="7FF02B35-5116-4138-A8FB-3C8C8904253F_4_5005_c.jpeg" alt="Home Icon">
-            <span>Home</span>
-        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Entry 1</a>
+            <a href="#">Entry 2</a>
+            <a href="#">Entry 3</a>
+            <a href="#">Entry 4</a>
+            <a href="#">Entry 5</a>
+        </nav>
     </header>
+
+    <!-- Container for color boxes -->
+    <div class="container">
+        <div class="color-box box1">#7d0f00</div>
+        <div class="color-box box2">#004f3f</div>
+        <div class="color-box box3">#42004f</div>
+        <div class="color-box box4">#61012e</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        the personal pallette 
+    </footer>
+
 </body>
 </html>
