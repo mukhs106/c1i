@@ -1,106 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Colors Around Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Website</title>
+  <style>
+    /* Font setup */
+    @font-face {
+      font-family: 'gravita-geo-variable';
+      src: url('https://path-to-gravita-geo-variable-font.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
 
-        header {
-            background-color: #2206c4; /* Blue color */
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
+    /* Basic styling */
+    body {
+      margin: 0;
+      font-family: 'gravita-geo-variable', sans-serif;
+      font-variation-settings: 'wght' 400;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      color: rgb(224, 47, 65);
+      min-height: 100vh;
+    }
 
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+    /* Header styling */
+    .header {
+      background-color: #ffffff;
+      color: rgb(224, 47, 65);
+      text-align: center;
+      padding: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      border-bottom: 2px solid rgb(224, 47, 65);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
+    /* Sidebar styling */
+    .sidebar {
+      width: 200px;
+      padding-top: 20px;
+      border-right: 2px solid rgb(224, 47, 65);
+      color: rgb(224, 47, 65);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 100%;
+      top: 0;
+    }
 
-        .color-box {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 2px #000;
-        }
+    /* Menu styling */
+    .menu-item {
+      text-align: left;
+      padding: 15px 20px;
+      font-size: 1.2em;
+      color: rgb(224, 47, 65);
+      text-decoration: none;
+      display: block;
+    }
 
-        /* First 4 boxes */
-        .box1 { background-color: #7d0f00; /* Deep red */ }
-        .box2 { background-color: #004f3f; /* Dark green */ }
-        .box3 { background-color: #42004f; /* Dark purple */ }
-        .box4 { background-color: #61012e; /* Deep burgundy */ }
+    .menu-item:hover {
+      background-color: rgba(224, 47, 65, 0.1);
+    }
 
-        /* Additional 4 boxes with similar palette colors */
-        .box5 { background-color: #312cb5; /* A deeper shade of blue */ }
-        .box6 { background-color: #8b4500; /* Dark orange-brown */ }
-        .box7 { background-color: #005f4e; /* Teal green */ }
-        .box8 { background-color: #530054; /* Deep magenta */ }
+    /* divider for Welcome */
+.menu-item.welcome {
+  font-weight: bold;
+  padding-top: 50px;  /* Extra space above the "Welcome" text */
+  padding-bottom: 50px; /* Extra space below the "Welcome" text */
+  border-bottom: 1px solid rgb(224, 47, 65); /* Separating line under "Welcome" */
+  margin-bottom: 20px; /* Spacing between "Welcome" and the next entry */
+}
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #2206c4;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    /* Content area styling */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    /* Main header styling */
+    h1 {
+      font-size: 2em;
+      color: rgb(224, 47, 65);
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    /* Footer styling */
+    .footer {
+      border-top: 2px solid rgb(224, 47, 65);
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      color: rgb(224, 47, 65);
+      width: 100%;
+      background-color: #ffffff;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header -->
+  <header class="header">Website Header</header>
 
-    <!-- Header section with navigation -->
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Entry 1</a>
-            <a href="#">Entry 2</a>
-            <a href="#">Entry 3</a>
-            <a href="#">Entry 4</a>
-            <a href="#">Entry 5</a>
-            <a href="#">Entry 6</a>
-            <a href="#">Entry 7</a>
-            <a href="#">Entry 8</a>
-        </nav>
-    </header>
+  <!-- Sidebar with Menu -->
+  <div class="sidebar">
+    <a href="#" class="menu-item welcome">Welcome</a>
+    <a href="#" class="menu-item">Entry 1</a>
+    <a href="#" class="menu-item">Entry 2</a>
+    <a href="#" class="menu-item">Entry 3</a>
+    <a href="#" class="menu-item">Entry 4</a>
+    <a href="#" class="menu-item">Entry 5</a>
+    <a href="#" class="menu-item">Entry 6</a>
+    <a href="#" class="menu-item">Entry 7</a>
+    <a href="#" class="menu-item">Entry 8</a>
+    <a href="#" class="menu-item">Entry 9</a>
+    <a href="#" class="menu-item">Entry 10</a>
+  </div>
 
-    <!-- Container for color boxes -->
-    <div class="container">
-        <div class="color-box box1">Entry 1</div>
-        <div class="color-box box2">Entry 2</div>
-        <div class="color-box box3">Entry 3</div>
-        <div class="color-box box4">Entry 4</div>
-        <div class="color-box box5">Entry 5</div>
-        <div class="color-box box6">Entry 6</div>
-        <div class="color-box box7">Entry 7</div>
-        <div class="color-box box8">Entry 8</div>
-    </div>
+  <!-- Main Content Area -->
+  <div class="content">
+    <h1>Main Content Page</h1>
+    <p>This is where the main content of the website will go.</p>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 My Favorite Colors
-    </footer>
-
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Footer Content</p>
+  </footer>
 </body>
 </html>
