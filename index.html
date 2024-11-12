@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +24,8 @@
       background-color: #ffffff;
       color: rgb(224, 47, 65);
       min-height: 100vh;
+      cursor: url('images/cursor icon.png'), auto;
+      /* Custom cursor */
     }
 
     /* Header styling */
@@ -55,8 +58,10 @@
 
     /* Menu styling */
     .menu-item {
-      text-align: center; /* Center align text */
-      padding: 10px 0; /* Adjust padding for vertical alignment */
+      text-align: center;
+      /* Center align text */
+      padding: 10px 0;
+      /* Adjust padding for vertical alignment */
       font-size: 1.2em;
       color: rgb(224, 47, 65);
       text-decoration: none;
@@ -70,24 +75,39 @@
     /* Divider for Home */
     .menu-item.home {
       font-weight: bold;
-      padding: 10;                /* Reset padding to use Flexbox for centering */
-      margin-bottom: 15px;       /* Reduced spacing between "Home" and the next entry */
-      position: relative;         /* Required for positioning the line */
-      display: flex;             /* Enable Flexbox */
-      align-items: center;       /* Vertically center the text */
-      justify-content: center;    /* Horizontally center the text */
-      height: 150px;             /* Set a fixed height for the menu item */
+      padding: 10;
+      /* Reset padding to use Flexbox for centering */
+      margin-bottom: 15px;
+      /* Reduced spacing between "Home" and the next entry */
+      position: relative;
+      /* Required for positioning the line */
+      display: flex;
+      /* Enable Flexbox */
+      align-items: center;
+      /* Vertically center the text */
+      justify-content: center;
+      /* Horizontally center the text */
+      height: 150px;
+      /* Set a fixed height for the menu item */
     }
 
     .menu-item.home::after {
-      content: "";               /* Creates an empty pseudo-element */
-      position: absolute;        /* Position it relative to the menu item */
-      right: 0;                  /* Align it to the right */
-      width: 100%;               /* Set width to 100% of the menu item */
-      height: 2px;               /* Set the height of the line */
-      background-color: rgb(224, 47, 65); /* Set the line color */
-      top: 70%;                  /* Move the line down; adjust this value as needed */
-      transform: translateY(-50%); /* Adjust for perfect centering vertically */
+      content: "";
+      /* Creates an empty pseudo-element */
+      position: absolute;
+      /* Position it relative to the menu item */
+      right: 0;
+      /* Align it to the right */
+      width: 100%;
+      /* Set width to 100% of the menu item */
+      height: 2px;
+      /* Set the height of the line */
+      background-color: rgb(224, 47, 65);
+      /* Set the line color */
+      top: 70%;
+      /* Move the line down; adjust this value as needed */
+      transform: translateY(-50%);
+      /* Adjust for perfect centering vertically */
     }
 
     /* Content area styling */
@@ -117,6 +137,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">Suhani’s archives</header>
@@ -147,4 +168,5 @@
     <p>Footer Content</p>
   </footer>
 </body>
+
 </html>
