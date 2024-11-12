@@ -77,17 +77,6 @@
         margin-top: 0;
         text-transform: uppercase;
       }
-
-      /* Footer styling */
-      .footer {
-        border-top: 2px solid rgb(224, 47, 65);
-        text-align: center;
-        padding: 10px;
-        font-size: 0.9em;
-        color: rgb(224, 47, 65);
-        width: 100%;
-        background-color: #ffffff;
-      }
   </style>
 </head>
 
@@ -102,9 +91,9 @@
   <buttom class="scroll-to-top" onclick="scrollToTop()">↑</button>
 
     <script>
-      // Show the button when the user scrolls down 20px from the top of the document
+      // Function to show or hide the scroll-to-top button
       window.onscroll = function () {
-        var scrollToTopButton = document.querySelector('.scroll-to-top');
+        var scrollToTopButton = document.getElementById("scrollToTopButton");
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           scrollToTopButton.style.display = 'block';
         } else {
@@ -125,10 +114,8 @@
       <p>Welcome to the archives! this is the corner of the internet where i prove to you, that i am creative.</p>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Footer Content</p>
-    </footer>
 </body>
+
+}
 
 </html>
