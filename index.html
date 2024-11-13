@@ -43,8 +43,8 @@
     }
 
     .home-icon {
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
     }
 
     /* Responsive image styling */
@@ -58,15 +58,17 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: rgb(224, 47, 65);
-      color: #ffffff;
+      background-color: transparent;
+      /* Make background transparent */
       border: none;
-      padding: 10px;
-      border-radius: 50%;
       cursor: pointer;
-      font-size: 20px;
       display: none;
       /* Hidden by default */
+    }
+
+    .scroll-to-top img {
+      width: 40px;
+      height: 40px;
     }
 
     /* Content area styling */
@@ -99,12 +101,14 @@
   <img src="Images/NY 1.png" alt="NY 1 Image" class="bottom-image">
 
   <!-- Scroll to top button -->
-  <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+  <button id="scrollToTopButton" class="scroll-to-top" onclick="scrollToTop()">
+    <img src="Images/arrow-icon.png" alt="Scroll to top">
+  </button>
 
   <script>
     // Function to show or hide the scroll-to-top button
     window.onscroll = function () {
-      var scrollToTopButton = document.querySelector(".scroll-to-top");
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopButton.style.display = 'block';
       } else {
