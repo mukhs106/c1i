@@ -90,7 +90,7 @@
   <!-- Header -->
   <header class="header">
     <a href="index.html">
-      <img src="images/home_icon.png" alt="Home" class="home-icon">
+      <img src="Images/home icon.png" alt="Home" class="home-icon">
     </a>
     Suhani’s archives
   </header>
@@ -99,34 +99,32 @@
   <img src="Images/NY 1.png" alt="NY 1 Image" class="bottom-image">
 
   <!-- Scroll to top button -->
-  <buttom class="scroll-to-top" onclick="scrollToTop()">↑</button>
+  <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
 
-    <script>
-      // Function to show or hide the scroll-to-top button
-      window.onscroll = function () {
-        var scrollToTopButton = document.getElementById("scrollToTopButton");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollToTopButton.style.display = 'block';
-        } else {
-          scrollToTopButton.style.display = 'none';
-        }
-      };
-
-      // Scroll to the top of the document
-      function scrollToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+  <script>
+    // Function to show or hide the scroll-to-top button
+    window.onscroll = function () {
+      var scrollToTopButton = document.querySelector(".scroll-to-top");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
       }
-    </script>
+    };
 
-    <!-- Main Content Area -->
-    <div class="content">
-      <h1> are you creative?</h1>
-      <p>Welcome to the archives! this is the corner of the internet where i prove to you, that i am creative.</p>
-    </div>
+    // Scroll to the top of the document
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <h1> are you creative?</h1>
+    <p>Welcome to the archives! this is the corner of the internet where i prove to you, that i am creative.</p>
+  </div>
 
 </body>
-
-}
 
 </html>
