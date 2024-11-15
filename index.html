@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suhani's Archives</title>
   <link rel="stylesheet" href="index.css">
+</head>
+
   <style>
     /* Font setup */
     @font-face {
@@ -20,8 +22,12 @@
       margin: 0;
       font-family: 'gravita-geo-variable', sans-serif;
       font-variation-settings: 'wght' 400;
+      display: flex;
+      flex-direction: column;
       color: rgb(224, 47, 65);
       min-height: 100vh;
+      cursor: url('Images/cursor icon.png'), auto;
+      /* Custom cursor */
     }
 
     /* Header styling */
@@ -47,7 +53,8 @@
     /* Main content styling */
     .content {
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
+      margin: 20px;
+      border-radius: 10px;
     }
 
     /* Scroll to top button styling */
@@ -58,6 +65,7 @@
       background-color: transparent;
       /* Make background transparent */
       border: none;
+      cursor: pointer;
       display: none;
       /* Hidden by default */
     }
@@ -82,7 +90,6 @@
       text-transform: uppercase;
     }
   </style>
-</head>
 
 <body>
   <!-- Header -->
@@ -95,11 +102,17 @@
 
   <!-- Main Content Area -->
   <div class="content">
+    <h1> are you creative?</h1>
+    <p>Welcome to the archives.</p>
+  </div>
+
+<!-- all entries -->
+  <div class="content">
     <!-- Entry 1 -->
     <div class="entry entry1">
       <a href="entry1.html">Entry 1</a>
     </div>
-
+    
     <!-- Entry 2 -->
     <div class="entry entry2">
       <a href="entry2.html">Entry 2</a>

@@ -13,10 +13,21 @@
   transform: scale(1.1);
 }
 
-.entry1 { top: 150px; left: 80px; }
-.entry2 { top: 200px; left: 250px; }
-.entry3 { top: 300px; left: 400px; }
-.entry4 { top: 200px; left: 500px; }
-.entry5 { top: 350px; left: 150px; }
-.entry6 { top: 450px; left: 300px; }
-.entry8 { top: 550px; left: 100px; }
+.entry1 { top: 300px; left: 300px; }
+.entry2 { top: 300px; left: 700px; }
+.entry3 { top: 300px; left: 1100px; }
+.entry4 { top: 500px; left: 150px; }
+.entry5 { top: 500px; left: 550px; }
+.entry6 { top: 500px; left: 950px; }
+.entry7 { top: 500px; left: 1350px; }
+.entry8 { top: 700px; left: 300px; }
+.entry9 { top: 700px; left: 700px; }
+.entry10 { top: 700px; left: 1100px; }
+
+/* Cart image styling */
+.cart-image {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 10 auto;
+  }
