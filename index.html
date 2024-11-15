@@ -1,119 +1,74 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suhani's Archives</title>
-  <style>
-    /* Font setup */
-    @font-face {
-      font-family: 'gravita-geo-variable';
-      src: url('https://path-to-gravita-geo-variable-font.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    /* Basic styling */
-    body {
-      margin: 0;
-      font-family: 'gravita-geo-variable', sans-serif;
-      font-variation-settings: 'wght' 400;
-      display: flex;
-      flex-direction: column;
-      background: url('Images/NY 1.png') no-repeat center center;
-      background-size: cover;
-      color: rgb(224, 47, 65);
-      min-height: 100vh;
-      cursor: url('Images/cursor icon.png'), auto;
-      /* Custom cursor */
-    }
-
-    /* Header styling */
-    .header {
-      background-color: #ffffff;
-      color: rgb(224, 47, 65);
-      padding: 20px;
-      font-size: 1.5em;
-      font-weight: bold;
-      border-bottom: 2px solid rgb(224, 47, 65);
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .home-icon {
-      height: 40px;
-      width: 40px;
-    }
-
-    /* Main content styling */
-    .content {
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      /* Semi-transparent background */
-      margin: 20px;
-      border-radius: 10px;
-    }
-
-    /* Scroll to top button styling */
-    .scroll-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: transparent;
-      /* Make background transparent */
-      border: none;
-      cursor: pointer;
-      display: none;
-      /* Hidden by default */
-    }
-
-    .scroll-to-top img {
-      width: 40px;
-      height: 40px;
-    }
-
-    /* Content area styling */
-    .content {
-      margin-left: 220px;
-      padding: 20px;
-      flex-grow: 1;
-    }
-
-    /* Main header styling */
-    h1 {
-      font-size: 2em;
-      color: rgb(224, 47, 65);
-      margin-top: 0;
-      text-transform: uppercase;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
-
-<body>
-  <!-- Header -->
+    
+    <body>
+ 
   <header class="header">
     <a href="index.html">
-      <img src="Images/home-icon.png" alt="Home" class="home-icon">
+      <img src="Icons/home-icon.png" alt="Home" class="home-icon">
     </a>
     Suhani’s archives
   </header>
 
-  <!-- Main Content Area -->
+ 
   <div class="content">
     <h1> are you creative?</h1>
     <p>Welcome to the archives.</p>
   </div>
 
-  <!-- Footer with background image -->
-  <footer class="footer"></footer>
+<!-- all entries -->
+  <div class="entry">
+   
+      <a href="entry1.html">Entry 1</a>
+
+    
+   
+      <a href="entry2.html">Entry 2</a>
+
+
+   
+      <a href="entry3.html">Entry 3</a>
+    
+
+   
+      <a href="entry4.html">Entry 4</a>
+  
+
+    
+      <a href="entry5.html">Entry 5</a>
+    
+
+   
+      <a href="entry6.html">Entry 6</a>
+
+
+   
+      <a href="entry7.html">Entry 7</a>
+   
+
+   
+      <a href="entry8.html">Entry 8</a>
+  
+
+    
+      <a href="entry9.html">Entry 9</a>
+    
+
+   
+      <a href="entry10.html">Entry 10</a>
+    
+  
 
   <!-- Scroll to top button -->
   <button id="scrollToTopButton" class="scroll-to-top" onclick="scrollToTop()">
-    <img src="Images/arrow-icon.png" alt="Scroll to top">
+    <img src="Icons/arrow-icon.png" alt="Scroll to top">
   </button>
 
   <script>
@@ -133,7 +88,5 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-
 </body>
-
 </html>
