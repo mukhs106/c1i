@@ -1,72 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3: Entry 2</title>
-    
-    <!-- Import Playfair Display font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <style>
-        /* Apply Playfair Display font */
-        body {
-            font-family: 'Playfair Display', serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 900; /* Bold weight for header */
-        }
-
-        section h2 {
-            font-weight: 700; /* Semi-bold for section titles */
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-weight: 400; /* Normal weight for footer */
-        }
-
-        a {
-            text-decoration: none;
-            color: #2206c4; /* Style for link */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhani's Archives</title>
+  <link rel="stylesheet" href="Entry1.css">
 </head>
+    
 <body>
+  <header class="header">
+    <a href="index.html">
+      <img src="Icons/home-icon.png" alt="Home" class="home-icon">
+    </a>
+    Suhani’s Archives
+  </header>
 
-    <!-- Header with a title -->
-    <header>
-        <h1>Week 3: Entry 2</h1>
-    </header>
+  <div class="content">
+    <h1> are you creative?</h1>
+    <p>Welcome to the Archives.</p>
+  </div>
 
-    <!-- Image Section -->
-    <section>
-        <h2>Browns & Blues</h2>
-        <img src="https://drive.google.com/uc?export=view&id=1TiDok-yM1NPBr3X17eeSGnXUEAfq4ZmV" alt="Photo from Google Drive">
-    </section>
+   <!-- Flexbox container with background image -->
+   <div class="background-container"></div>
+   
+  <!-- Scroll to top button -->
+  <button id="scrollToTopButton" class="scroll-to-top" onclick="scrollToTop()">
+    <img src="Icons/arrow-icon.png" alt="Scroll to top">
+  </button>
 
-    <!-- Back to homepage link -->
-    <footer>
-        <p><a href="https://mukhs106.github.io/c1i/">Back to home page</a></p>
-    </footer>
+  <script>
+    // Function to show or hide the scroll-to-top button
+    window.onscroll = function () {
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
+      }
+    };
 
+    // Scroll to the top of the document
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>
