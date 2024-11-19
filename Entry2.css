@@ -1,0 +1,91 @@
+/* Font setup */
+@font-face {
+    font-family: 'gravita-geo-variable';
+    src: url('https://path-to-gravita-geo-variable-font.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+ .body {
+     height: 500vh;
+       margin: 0;
+       padding:0;
+       font-family: 'gravita-geo-variable', sans-serif;
+       font-variation-settings: 'wght' 400;
+       display: flex;
+       flex-direction: column;
+       color: rgb(224, 47, 65);
+       cursor: url('Icons/cursor-icon.png'), auto; /* Custom cursor */
+       overflow: hidden; /* Prevent scrollbars */
+ 
+ }
+ 
+   .header {
+     background-color: #ffffff;
+     color: rgb(224, 47, 65);
+     padding: 20px;
+     font-size: 1.5em;
+     font-weight: bold;
+     border-bottom: 2px solid rgb(224, 47, 65);
+     position: sticky;
+     top: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+ 
+   .h1 {
+     font-size: 2em;
+     color:rgb(224, 47, 65);
+     margin-top: 0;
+     text-transform: uppercase;
+   }
+ 
+   .home-icon {
+     height: 40px;
+     width: 40px;
+   }
+ 
+   /* Main content styling */
+   .content {
+     padding: 20px;
+     margin: 20px;
+     border-radius: 10px;
+     position: relative;
+     z-index: 1; /* Ensure content is above the video */
+ }
+
+ /* Flexbox container with background image */
+.background-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    background: url('images/hands-2.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+   /* Scroll to top button styling */
+   .scroll-to-top {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: transparent;
+     /* Make background transparent */
+     border: none;
+     cursor: pointer;
+     display: none;
+     /* Hidden by default */
+   }
+ 
+   .scroll-to-top img {
+     width: 40px;
+     height: 40px;
+   }
+ 
+   /* Content area styling */
+   .content {
+     margin-left: 220px;
+     padding: 20px;
+     flex-grow: 1;
+   }
+ 
