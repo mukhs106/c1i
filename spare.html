@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhani's Archives</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+    
+    <body>
+ 
+  <header class="header">
+    <a href="index.html">
+      <img src="Icons/home-icon.png" alt="Home" class="home-icon">
+    </a>
+    Suhani’s archives
+  </header>
+
+ 
+  <div class="content">
+    <h1> are you creative?</h1>
+    <p>Welcome to the archives.</p>
+  </div>
+
+<!-- all entries -->
+  <div class="entry">
+   
+      <a href="entry1.html">Entry 1</a> 
+      <a href="entry2.html">Entry 2</a>
+      <a href="entry3.html">Entry 3</a>
+      <a href="entry4.html">Entry 4</a>
+      <a href="entry5.html">Entry 5</a>
+      <a href="entry6.html">Entry 6</a>
+      <a href="entry7.html">Entry 7</a>
+      <a href="entry8.html">Entry 8</a>
+      <a href="entry9.html">Entry 9</a>
+      <a href="entry10.html">Entry 10</a>
+  </div>
+  
+  <!-- Scroll to top button -->
+  <button id="scrollToTopButton" class="scroll-to-top" onclick="scrollToTop()">
+    <img src="Icons/arrow-icon.png" alt="Scroll to top">
+  </button>
+
+  <script>
+    // Function to show or hide the scroll-to-top button
+    window.onscroll = function () {
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
+      }
+    };
+
+    // Scroll to the top of the document
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>
