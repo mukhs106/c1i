@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+          <a href="index.html">
+            <img src="Icons/home-icon.png" alt="Home" class="home-icon">
+          </a>
+        </div>
+        <div class="header-right">
+            <p>Suhani's Archives</p>
+        </div>
+    </header>
+
+    <div class="red-section">
+      <img src="images/Artwork/sculpture1.png" alt="Abstract 1" class="artwork">
+      <img src="images/Artwork/Faces.png" alt="Faces" class="artwork">
+      <img src="images/Artwork/Surreal2.png" alt="Surreal 2" class="artwork">
+      <img src="images/Artwork/Mandala1.png" alt="Mandala 1" class="artwork">
+      <img src="images/Artwork/Surreal1.png" alt="Surreal 1" class="artwork">
+      <img src="images/Artwork/CSelfP.png" alt="Mixed media self portrait" class="artwork">
+      <img src="images/Artwork/PortiaP.png" alt="portia portrait" class="artwork">
+  </div>
+
+    <div class="white-section">
+        <h1>Your Artwork Here</h1>
+        <h2>artworks to be added</h2>
+        <p> welcome to the archives </p>
+    </div>
+
+    <img src="Icons/arrow-icon.png" alt="Scroll to top" class="scroll-to-top" onclick="scrollToTop()">
+
+    <script src="index.js"></script>
+   
+    /* css */
+
+    /* Global cursor style */
+    body {
+      cursor: url('Icons/cursor-test.svg'), auto; /* Applying custom cursor globally */
+    }
+    
+    .custom-area {
+      cursor: url('Icons/cursor-test.svg'), pointer;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      border-bottom: 2px solid rgb(224, 47, 65);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .header-right p {
+      color: rgb(195, 0, 0);
+      margin: 0;
+      text-align: right;
+      font-size: 1.5em;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700; /* Bold weight */
+    }
+    
+    .home-icon {
+      width: 33px;
+      height: 35px;
+      margin-right: 10px;
+    }
+    
+    /* red section styling */
+    .red-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 200px);
+      gap: 10px;
+      padding: 20px;
+      background-color: rgb(125, 0, 0);
+      margin-top: 70px; /* Space for fixed header */
+      overflow: hidden;
+    }
+    
+    .red-section .artwork:nth-child(1) { /* sculpture */
+      grid-area: 2 / 1 / 2 / 1;
+    }
+    
+    .red-section .artwork:nth-child(2) { /* faces */
+      grid-area: 2 / 3 / 2 / 5;
+    }
+    
+    .red-section .artwork:nth-child(3) { /* surreal 2 */
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .red-section .artwork:nth-child(4) { /* mandala 1 */
+      grid-area: 2 / 2 / 3 / 4;
+    }
+    
+    .red-section .artwork:nth-child(5) { /* surreal 1 */
+      grid-area: 2 / 4 / 3 / 5;
+    }
+    
+    .red-section .artwork:nth-child(6) { /* mixed media self portrait */
+      grid-area: 3 / 1 / 4 / 3;
+    }
+    
+    .red-section .artwork:nth-child(7) { /* portia portrait */
+      grid-area: 3 / 3 / 4 / 5;
+    }
+    
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Grid layout for images */
+      grid-gap: 20px;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .artwork {
+      width: 190px; /* change image size */
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .artwork:hover {
+      transform: scale(1.1);
+    }
+    
+    /* White section styling */
+    .white-section {
+      background-color: white;
+      color: rgb(195, 0, 0);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .white-section h1 {
+      margin-top: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700; /* Bold weight */
+    }
+    
+    .white-section p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400; /* Regular weight */
+    }
+    
+    /* Animation for scrolling */
+    body.scrolled .image-container {
+      transform: translateX(-50%);
+    }
+    
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 100;
+      display: none; /* Initially hidden */
+    }
+    
+    /* Poppins font weights */
+    .poppins-light {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    /* Apply specific font styles to elements */
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400; /* Regular weight */
+    }
+    
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500; /* Medium weight */
+    }
+    
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700; /* Bold weight */
+    }
+    
+    /* Responsive design */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .header-center p, .header-right p {
+        font-size: 16px;
+      }
+    
+      .artwork {
+        width: 100px; /* Further adjust for small screens */
+      }
+    }
+
+</body>
+</html>
