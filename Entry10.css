@@ -41,6 +41,16 @@ header {
     display: none; /* Initially hidden */
 }
 
+.background-video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur (150px);
+}
+
 /* Poppins font weights */
 .poppins-light {
     font-family: "Poppins", sans-serif;
