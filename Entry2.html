@@ -1,50 +1,58 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suhani's Archives</title>
-  <link rel="stylesheet" href="Entry1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Entry2.css">
 </head>
-    
 <body>
-  <header class="header">
-    <a href="index.html">
-      <img src="Icons/home-icon.png" alt="Home" class="home-icon">
-    </a>
-    Suhani’s Archives
-  </header>
+    <header>
+        <div class="header-left">
+          <a href="index.html">
+            <img src="Icons/home-icon.png" alt="Home" class="home-icon">
+          </a>
+        </div>
+        <div class="header-right">
+            <p>Suhani's Archives</p>
+        </div>
+    </header>
 
-  <div class="content">
-    <h1> are you creative?</h1>
-    <p>Welcome to the Archives.</p>
-  </div>
+    <h1>Welcome to a new entry</h1>
+    <h2>Subheader</h2>
+    <p>This is a paragraph text.</p>
 
-   <!-- Flexbox container with background image -->
-   <div class="background-container"></div>
-   
-  <!-- Scroll to top button -->
-  <button id="scrollToTopButton" class="scroll-to-top" onclick="scrollToTop()">
-    <img src="Icons/arrow-icon.png" alt="Scroll to top">
-  </button>
+    <!-- Scrollable Section -->
+    <div class="scroll-container">
+        <div role="img" class="intro" aria-label="Scroll down for the magic">
+            <span>👋</span>
+            <span>⬇️</span>
+        </div>
+        <div class="box">
+            <p class="text">hello</p>
+        </div>
+        <div class="box">
+            <p class="text">is it me you're looking for?</p>
+        </div>
+        <div class="box">
+            <p class="text">I can see it in your eyes</p>
+        </div>
+        <div class="box">
+            <p class="text">I can see it in your smile</p>
+        </div>
+        <div class="smile" role="img" aria-hidden="true">
+            <div>
+                <span>☺️</span>
+                <span>🙂</span>
+                <span>😉</span>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    // Function to show or hide the scroll-to-top button
-    window.onscroll = function () {
-      var scrollToTopButton = document.getElementById("scrollToTopButton");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopButton.style.display = 'block';
-      } else {
-        scrollToTopButton.style.display = 'none';
-      }
-    };
+    <img src="Icons/arrow-icon.png" alt="Scroll to top" class="scroll-to-top" onclick="scrollToTop()">
 
-    // Scroll to the top of the document
-    function scrollToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
 </body>
 </html>
