@@ -1,84 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colors and Objects</title>
+    <title>Artworks Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Entry3.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Personal Pallete: Objects & colors</h1>
-            <h2>Core 1: Interaction</h2>
-            <p>By Suhani Mukherjee</p>
-        </header>
+  <!-- The video -->
+  <section id="video-section">
+    <video autoplay muted loop id="myVideo">
+        <source src="Videos/Kolkata.MP4" type="video/mp4">
+    </video>
+</section>
 
-        <!-- Section for Color #2206c4 -->
-        <section class="color-section" style="background-color: #2206c4;">
-            <h2>Color #2206c4</h2>
-            <div class="color-swatches">
-                <div style="background-color: #2206c4;"></div>
-            </div>
-            <div class="object-gallery">
-                <h3>Objects in This Color</h3>
-                <img src="path/to/your-object1.jpg" alt="Object 1">
-                <img src="path/to/your-object2.jpg" alt="Object 2">
-            </div>
-        </section>
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Just because we're not the great at something doesn't mean we shouldn't do it</h1>
+  <h2>Can you see it?</h2>
+  <p></p>
+</div>
+  <header>
+        <div class="header-left">
+          <a href="index.html">
+            <img src="Icons/home-icon.png" alt="Home" class="home-icon">
+          </a>
+        </div>
+        <div class="header-right">
+            <p>Suhani's Archives</p>
+        </div>
+    </header>
 
-        <!-- Section for Color #7d0f00 -->
-        <section class="color-section" style="background-color: #7d0f00;">
-            <h2>Color #7d0f00</h2>
-            <div class="color-swatches">
-                <div style="background-color: #7d0f00;"></div>
-            </div>
-            <div class="object-gallery">
-                <h3>Objects in This Color</h3>
-                <img src="path/to/your-object3.jpg" alt="Object 3">
-                <img src="path/to/your-object4.jpg" alt="Object 4">
-            </div>
-        </section>
+     <!-- Next button -->
+  <div class="next-button-container">
+    <a href="Entry4.html"><button class="next-button">next</button></a>
+  </div>
 
-        <!-- Section for Color #004f3f -->
-        <section class="color-section" style="background-color: #004f3f;">
-            <h2>Color #004f3f</h2>
-            <div class="color-swatches">
-                <div style="background-color: #004f3f;"></div>
-            </div>
-            <div class="object-gallery">
-                <h3>Objects in This Color</h3>
-                <img src="path/to/your-object5.jpg" alt="Object 5">
-                <img src="path/to/your-object6.jpg" alt="Object 6">
-            </div>
-        </section>
+    <img src="Icons/arrow-icon.png" alt="Scroll to top" class="scroll-to-top" onclick="scrollToTop()">
 
-        <!-- Section for Color #42004f -->
-        <section class="color-section" style="background-color: #42004f;">
-            <h2>Color #42004f</h2>
-            <div class="color-swatches">
-                <div style="background-color: #42004f;"></div>
-            </div>
-            <div class="object-gallery">
-                <h3>Objects in This Color</h3>
-                <img src="path/to/your-object7.jpg" alt="Object 7">
-                <img src="path/to/your-object8.jpg" alt="Object 8">
-            </div>
-        </section>
+    <script src="index.js"></script>
 
-        <!-- Section for Color #61012e -->
-        <section class="color-section" style="background-color: #61012e;">
-            <h2>Color #61012e</h2>
-            <div class="color-swatches">
-                <div style="background-color: #61012e;"></div>
-            </div>
-            <div class="object-gallery">
-                <h3>Objects in This Color</h3>
-                <img src="path/to/your-object9.jpg" alt="Object 9">
-                <img src="path/to/your-object10.jpg" alt="Object 10">
-            </div>
-        </section>
 </body>
-
 </html>

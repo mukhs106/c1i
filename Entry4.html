@@ -1,25 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   <!-- Copy for main skelaton of Website -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Template</title>
+    <title>Artworks Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Entry4.css">
 </head>
 <body>
-    <header>
+  <!-- The video -->
+  <section id="video-section">
+    <video autoplay muted loop id="myVideo">
+        <source src="Videos/scream1.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Sometimes you just need to let it all out!</h1>
+  <h2>But sometimes that doesn't work...</h2>
+  <p></p>
+</div>
+  <header>
         <div class="header-left">
           <a href="index.html">
             <img src="Icons/home-icon.png" alt="Home" class="home-icon">
           </a>
         </div>
+        <div class="header-right">
+            <p>Suhani's Archives</p>
+        </div>
     </header>
 
-    <!-- Add your page content here -->
+     <!-- Next button -->
+  <div class="next-button-container">
+    <a href="entry5.html"><button class="next-button">next</button></a>
+  </div>
 
     <img src="Icons/arrow-icon.png" alt="Scroll to top" class="scroll-to-top" onclick="scrollToTop()">
 
     <script src="index.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,3 @@
-/* index.css */
-
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -13,7 +11,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #ffffff;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -23,6 +21,16 @@ header {
     display: flex;
     align-items: center;
   }
+
+  .header-right p {
+    color: rgb(195, 0, 0);
+    margin: 0;
+    padding-right: 50px;
+    text-align: right;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; /* Bold weight */
+  }
   
   .home-icon {
     width: 33px;
@@ -30,6 +38,32 @@ header {
     margin-right: 10px;
   }
 
+  .next-button-container {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .next-button {
+    border: 2px solid rgb(195, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+    color: rgb(195, 0, 0);
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px; /* Softer corners */
+  }
+  
+  .next-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05); /* Pop out effect */
+  }
+  
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -39,6 +73,31 @@ header {
     cursor: pointer;
     z-index: 100;
     display: none; /* Initially hidden */
+}
+
+.entry-button {
+    position: absolute;
+    border: 2px solid rgb(195, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    margin: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    color: rgb(195, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+    border-radius: 10px; /* Softer corners */
+}
+
+.entry-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05); /* Pop out effect */
+    z-index: 101; /* Ensure the hovered button is on top */
+}
+
+.entry-button:hover ~ .entry-button {
+    opacity: 0; /* Hide other buttons */
 }
 
 .background-video {

@@ -1,102 +1,100 @@
-/* Font setup */
-@font-face {
-   font-family: 'gravita-geo-variable';
-   src: url('https://path-to-gravita-geo-variable-font.woff2') format('woff2');
-   font-weight: 400;
-   font-style: normal;
- }
-
-.body {
-    height: 500vh;
-      margin: 0;
-      padding:0;
-      font-family: 'gravita-geo-variable', sans-serif;
-      font-variation-settings: 'wght' 400;
-      display: flex;
-      flex-direction: column;
-      color: rgb(224, 47, 65);
-      cursor: url('Icons/cursor-icon.png'), auto; /* Custom cursor */
-      overflow: hidden; /* Prevent scrollbars */
-
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: url('Icons/cursor-icon.png'), auto; /* Custom cursor */
 }
 
-/* Video background styling */
-#background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; /* Ensure the video is behind other content */
-  }
-
-  /* New .video class */
-.video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-  .header {
-    background-color: #ffffff;
-    color: rgb(224, 47, 65);
-    padding: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-bottom: 2px solid rgb(224, 47, 65);
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .h1 {
-    font-size: 2em;
-    color:rgb(224, 47, 65);
-    margin-top: 0;
-    text-transform: uppercase;
-  }
-
-  .home-icon {
-    height: 40px;
-    width: 40px;
-  }
-
-  /* Main content styling */
-  .content {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 1; /* Ensure content is above the video */
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
-  /* Scroll to top button styling */
-  .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: transparent;
-    /* Make background transparent */
-    border: none;
-    cursor: pointer;
-    display: none;
-    /* Hidden by default */
-  }
+.header-right p {
+  color: rgb(195, 0, 0);
+  margin: 0;
+  padding-right: 50px;
+  text-align: right;
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold weight */
+}
 
-  .scroll-to-top img {
-    width: 40px;
-    height: 40px;
-  }
+.home-icon {
+  width: 33px;
+  height: 35px;
+  margin-right: 10px;
+}
 
-  /* Content area styling */
-  .content {
-    margin-left: 220px;
-    padding: 20px;
-    flex-grow: 1;
-  }
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 100;
+  display: none; /* Initially hidden */
+}
 
+.entry-button {
+  position: absolute;
+  border: 2px solid rgb(195, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 40px;
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  color: rgb(195, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+  border-radius: 10px; /* Softer corners */
+}
+
+.entry-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.05); /* Pop out effect */
+  z-index: 101; /* Ensure the hovered button is on top */
+}
+
+.entry-button:hover ~ .entry-button {
+  opacity: 0; /* Hide other buttons */
+}
+
+/* Poppins font weights */
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
