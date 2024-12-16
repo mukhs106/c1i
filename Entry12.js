@@ -1,19 +1,31 @@
-import Spheres2Background from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.8/build/backgrounds/spheres2.cdn.min.js'
+// Select all images with the "artwork" class
+const artworks = document.querySelectorAll('.artwork');
 
-const bg = Spheres2Background(document.getElementById('webgl-canvas'), {
-  count: 200,
-  colors: [0xff0000, 0x0, 0xffffff],
-  minSize: 0.5,
-  maxSize: 1
-})
+// Add scroll event listener
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
 
-const button1 = document.getElementById('colors-btn')
+    // Loop through each artwork and apply scroll-based animation
+    artworks.forEach((artwork) => {
+        const isLeft = artwork.classList.contains('left');
+        const direction = isLeft ? 1 : -1; // Move left images right and right images left
+        const offset = scrollPosition * 0.2 * direction; // Adjust 0.2 for speed
 
-document.body.addEventListener('click', (ev) => {
-  if (ev.target !== button1) bg.togglePause()
-})
+        artwork.style.transform = `translateX(${offset}px)`; // Apply horizontal movement
+    });
+});
 
-button1.addEventListener('click', () => {
-  bg.spheres.setColors([0xffffff * Math.random(), 0xffffff * Math.random(), 0xffffff * Math.random()])
-  bg.spheres.light1.color.set(0xffffff * Math.random())
-})
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show the scroll-to-top button when scrolling down
+window.onscroll = function() {
+  const scrollButton = document.querySelector('.scroll-to-top');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+};
