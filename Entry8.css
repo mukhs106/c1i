@@ -69,8 +69,9 @@
     transform: scale(1.05); /* Pop out effect */
   }
   
+/* Repair sectioning here */
 .image-section {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
